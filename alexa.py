@@ -8,7 +8,7 @@ import wikipedia
 import random
 
 listener = sr.Recognizer()
-engine = pyttsx3.init()
+engine = pyttsx3.init('sapi5')
 engine.setProperty("voice", "french")
 engine.setProperty("rate", 170)
 voices = engine.getProperty('voices')
